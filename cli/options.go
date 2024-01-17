@@ -77,5 +77,7 @@ func DefaultCLIOptions() Options {
 		SortColumns:      make([]string, 0),
 		SortDirection:    make([]SortDirection, 0),
 		WatchInterval:    nil,
+		FixedWidth:	  false,
+    		ColumnWidth:      18,
 	}
 }
