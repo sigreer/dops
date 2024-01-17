@@ -406,9 +406,9 @@ func ColPortsNotPublished(ctx *cli.PSContext, allData []docker.ContainerSchema, 
 func ColName(ctx *cli.PSContext, allData []docker.ContainerSchema, cont *docker.ContainerSchema) []string {
     if cont == nil {
         header := "NAME"
-        if ctx.Opt.FixedWidth && ctx.Opt.ColumnWidth > 0 {
+        //if ctx.Opt.FixedWidth && ctx.Opt.ColumnWidth > 0 {
             header = fmt.Sprintf("%-*.*s", ctx.Opt.ColumnWidth, ctx.Opt.ColumnWidth, header)
-        }
+        //}
         return []string{header}
     }
 
@@ -418,9 +418,9 @@ func ColName(ctx *cli.PSContext, allData []docker.ContainerSchema, cont *docker.
             n = n[1:]
         }
 
-        if ctx.Opt.FixedWidth && ctx.Opt.ColumnWidth > 0 {
+       // if ctx.Opt.FixedWidth && ctx.Opt.ColumnWidth > 0 {
             n = fmt.Sprintf("%-*.*s", ctx.Opt.ColumnWidth, ctx.Opt.ColumnWidth, n)
-        }
+       // }
 
         r = append(r, n)
     }
