@@ -1,3 +1,7 @@
+# ./sbdops - slightly better `better docker ps`
+
+Fork of Mikescher/better-docker-ps which is a little known but insanely helpful formatter for docker ps. This fork adds some personal 'nice-to-have', nominally fixed width output columns and a shell script that executes dops on an array of hosts, returning uniformly formatted output for mutiple hosts.
+
 # ./dops - better `docker ps` 
 A replacement for the default docker-ps that tries really hard to fit into the width of your terminal.
 
