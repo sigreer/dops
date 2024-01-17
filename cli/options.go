@@ -35,6 +35,8 @@ type Options struct {
 	SortColumns      []string
 	SortDirection    []SortDirection
 	WatchInterval    *time.Duration
+	FixedWidth   	bool
+    	ColumnWidth  	int
 }
 
 func DefaultCLIOptions() Options {
